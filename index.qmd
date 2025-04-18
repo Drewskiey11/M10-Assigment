@@ -1,0 +1,29 @@
+---
+title: "Home Page"
+author: "Andrew Ingraham"
+subtitle: Homepage for Website | Student
+date: "`r Sys.Date()`"
+  tenplate: jolla
+  links:
+    - icon: github 
+      Text: 
+---
+
+# Welcome to My Website
+
+![Your Photo](IMG_1533.JPG){width=200px}
+
+## **Career Aspiration**
+I aim to become a data scientist, specializing in building interactive dashboards using R and Shiny.
+
+## **Skills**
+- Data Analysis (`tidyverse`)
+- Visualization (`ggplot2`, `Shiny`, `Plotly`)
+- Web Development (`Quarto`, `Markdown`)
+- Machine Learning (`caret`, `tidymodels`)
+
+## **Education**
+**M.S. in Data Science**  
+University of XYZ  
+Graduation Year: 202X
+
