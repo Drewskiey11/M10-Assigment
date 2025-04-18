@@ -1,0 +1,23 @@
+---
+title: "Essay on Shiny Live"
+author: "Andrew ingraham"
+date: "2025-04-18"
+output: html_document
+---
+
+# In Step 3, you learned about serverless Shiny Apps with "Shinylive." What is Shinylive? Assume that you are also explaining it to your coworkers. How does it differ from the traditional Shiny app introduced in Step 2? What are the pros and cons of Shinylive in comparison with Shiny Apps? This lecture note will become your "Essay on Shiny Live" part of the website.
+
+### Shinylive is the ability to run shiny applications directly in a web browser. This allows users to interact with shiny apps online without needing an active R session. The key differences between the two are important. Shiny requires an R backened while shinylive is runs in-browser. For shiny there is a server that is needed but in shinylive there is no server needed. Shiny also has real-time updates while shinylive updates within the browzer but is limited. Shiny can also run larger datasets. 
+
+# Pros 
+- There is no server required
+- It is easy to share
+- It has fast loading times
+- It is better for teaching and demos
+
+# Cons
+- Not suited for large datasets
+- Does not have direct database connections
+- Browser-dependent
+- May limit the amount of R packages
+

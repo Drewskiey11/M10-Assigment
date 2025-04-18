@@ -1,0 +1,80 @@
+---
+title: "Essay On Shiny Apps"
+author: "Andrew ingraham"
+date: "2025-04-17"
+output: html_document
+runtime: shiny
+---
+
+# In Step 2, you learned how to build an interactive web app using Shiny. Let's assume that your coworkers are interested in learning about it and assume that you are helping them. Create a lecture note that you can use to teach the person. This will become part of the website under "Essay on Shiny Apps."
+
+# Essay on how to use Shiny Apps
+
+> Shiny is a package that allows us to build interactive web applications without the need of knowledge on web development. It is useful when creating data dashboards and it allows the user to make and explore information dynamically. This also works very well with packages such as ggplot2, dplyr, and tidyr. There are two main components of shiny app and these include user interface which defines the layout and interactive components. The other component consists of server which handles the reactive elements. 
+
+***BELOW IS ARE SIMPLE EXAMPLES USING SHINY APP***
+
+
+```{r}
+# Install & load Shiny
+library(shiny)
+
+# Define UI
+ui <- fluidPage(
+  titlePanel("Simple Shiny App"),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("num", "Choose a number:", min = 1, max = 100, value = 50)
+    ),
+    mainPanel(
+      textOutput("selected_num")
+    )
+  )
+)
+
+# Define server logic
+server <- function(input, output) {
+  output$selected_num <- renderText({
+    paste("You selected:", input$num)
+  })
+}
+
+# Run the app
+shinyApp(ui = ui, server = server)
+```
+
+
+> The code chunk above showed how we can build a interactive element. This element gave us a scale that we can drag and it also tells us the number that we have the slide placed on. 
+>> Like mentioned we can also use this package to build a shiny dashboard. When building a dashboard with shiny the key features that we can use for the dashbaord include reactive expressions, dynamic plots, and widgets. With reactive expressions this is to ensure updates will happen automatically and there are changes done by the user. The dynamic plots allows us users to better visual the data by making it interactive. The widgets are basic inputs such as sliders, dropdowns, and tables that can be interacted wit. 
+
+***BELOW IS AN EXAMPLE***
+
+```{r}
+library(shiny)
+library(ggplot2)
+
+ui <- fluidPage(
+  titlePanel("Dynamic Data Visualization"),
+  sidebarLayout(
+    sidebarPanel(
+      sliderInput("bins", "Number of bins:", min = 5, max = 50, value = 30)
+    ),
+    mainPanel(
+      plotOutput("histPlot")
+    )
+  )
+)
+
+server <- function(input, output) {
+  output$histPlot <- renderPlot({
+    ggplot(data = mtcars, aes(x = mpg)) +
+      geom_histogram(bins = input$bins, fill = "blue", color = "white")
+  })
+}
+
+shinyApp(ui = ui, server = server)
+
+```
+
+>In conclusion the shiny apps provide a framework for building an interactive dashboard. With using shiny we can make custom web applications that will help us visualize and analyze data.
+
