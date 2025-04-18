@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Andrew Ingraham",
+    "section": "",
+    "text": "Andrew Ingraham is a undergraduate student from Cal Poly Pomona. I am looking to land a marketing job for one of three MLB teams. These teams include the Angels, Dodgers, and Padres."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Andrew Ingraham",
+    "section": "Education",
+    "text": "Education\nUniversity of Cal Poly Pomona, Pomona | Pomona, CA Undergraduate in Business | Aug 2022 - May 2026"
+  },
+  {
+    "objectID": "index.html#skills",
+    "href": "index.html#skills",
+    "title": "Andrew Ingraham",
+    "section": "Skills",
+    "text": "Skills\nMy skills that I have learned have been vast. I can work well with basic applications. These include all microsoft applications like excel. I have also had the chance to grasp coding applications such as R and Python."
+  }
+]
